@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -17,7 +17,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     cursor: url('/img/cursor/cursor.png'), auto;
     background-color: var(--white);
     scroll-behavior: smooth;
@@ -173,7 +173,7 @@ body {
     }
 
     & #elenco {
-        min-height: 100vh;
+        min-height: 85vh;
         background: var(--black);
         padding: 0;
         display: flex;
@@ -185,6 +185,8 @@ body {
             position: relative;
             overflow: hidden;
             padding: 0 1em;
+            max-width: 2000px;
+            margin: 0 auto;
 
             & .slider-btn {
               position: absolute;
@@ -237,7 +239,10 @@ body {
                         transition: .2s;
 
                         & .nome {
-                            min-height: 40px;
+                            min-height: 70px;
+                            font-family: "Dancing Script", cursive;
+                            font-size: 28px;
+                            text-align: center;
                         }
 
                         &:hover {
