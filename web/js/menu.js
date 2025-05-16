@@ -1,6 +1,11 @@
 let buttonMenu = document.querySelector('.menu');
 let navMenu = document.querySelector('.nav-menu');
 let header = document.querySelector('.header');
+let firstItem = document.getElementById('first-item-nav');
+
+firstItem.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+})
 
 buttonMenu.addEventListener('click', () => {
     navMenu.classList.toggle('open');

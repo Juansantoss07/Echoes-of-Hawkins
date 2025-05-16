@@ -13,10 +13,11 @@
     --red: #c405059f;
     --red-notransparent: #c40505;
     --white: #fff;
+    --old-paper: #fdf6e3;
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     cursor: url('/img/cursor/cursor.png'), auto;
     background-color: var(--white);
     scroll-behavior: smooth;
@@ -230,8 +231,8 @@ body {
                         justify-content: center;
                         flex-direction: column;
                         gap: 20px;
-                        background-color: var(--white);
-                        border-radius: 10px;
+                        background-color: var(--old-paper);
+                        border-radius: 0;
                         padding: 1em;
                         transition: .2s;
 
