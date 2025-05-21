@@ -1,0 +1,18 @@
+.efeito-lanterna {
+        position: absolute;
+        right: 3em;
+        top: 2em;
+        padding: 1em 2em;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: var(--white);
+        transition: .5s;
+        z-index: 3;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .5s;
+        }
+    }

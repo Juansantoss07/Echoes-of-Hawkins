@@ -1,0 +1,94 @@
+#elenco {
+    min-height: 85vh;
+    background: var(--black);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 5em;
+
+
+    & .cards-elenco {
+        position: relative;
+        overflow: hidden;
+        padding: 0 1em;
+        max-width: 2000px;
+        margin: 0 auto;
+
+        & .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--red-notransparent);
+            color: var(--white);
+            border: none;
+            padding: 1.5em;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .slider-btn.prev {
+            left: 2em;
+        }
+
+        & .slider-btn.next {
+            right: 2em;
+        }
+
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 30px;
+            padding: 1em 0;
+            transition: .7s;
+            user-select: none;
+            cursor: grab;
+
+            & li {
+                list-style: none;
+
+                & .card {
+                    width: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    background-color: var(--old-paper);
+                    border-radius: 0;
+                    padding: 1em;
+                    transition: .2s;
+
+                    & .nome {
+                        min-height: 70px;
+                        font-family: "Dancing Script", cursive;
+                        font-size: 28px;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        background-color: var(--red);
+                        transform: scale(1.03);
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                        transition: .5s;
+                    }
+
+                    & img {
+                        width: 270px;
+                        height: 360px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        pointer-events: none;
+                        -webkit-user-drag: none;
+                    }
+                }
+            }
+        }
+    }
+}
