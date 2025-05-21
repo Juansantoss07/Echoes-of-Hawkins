@@ -36,6 +36,17 @@ body {
         transition-delay: .3s;
     }
 
+    .animation-to-scale {
+        transform: scale(0);
+        transition: .5s;
+    }
+
+    .animation-to-scale-to-bottom {
+        transform: scale(0);
+        transition: .5s;
+        transform-origin: left top;
+    }
+
     .content-section {
         transition: .8s;
     }

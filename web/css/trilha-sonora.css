@@ -1,0 +1,18 @@
+#trilha-sonora {
+    background-color: var(--black);
+    min-height: 80vh;
+    padding-bottom: 5em;
+
+    & .playslist-apple-music {
+        padding: 0 10em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: .5s;
+
+        & iframe {
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+}
