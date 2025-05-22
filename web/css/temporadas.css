@@ -106,3 +106,37 @@
         }
     }
 }
+
+@media(max-width:1024px) {
+
+    .temporadas-details {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px !important;
+
+        & .card-details {
+            width: 100%;
+
+            & details {
+
+                & .content-details {
+                    flex-direction: column;
+                }
+
+                & .button-trailer {
+                    left: 2em;
+                    right: inherit !important;
+                    top: 5em !important;
+                }
+            }
+
+            & details[open] {
+                & summary{
+                    padding-bottom: 4em !important;
+                }
+            }
+        }
+    }
+}

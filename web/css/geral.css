@@ -11,6 +11,7 @@ body {
     cursor: url('/img/cursor/cursor.png'), auto;
     background-color: var(--white);
     scroll-behavior: smooth;
+    background-color: var(--red);
 
     & .gif-animated-transition-scroll {
         width: 100vw;
@@ -23,7 +24,29 @@ body {
         }
     }
 
+    section {
+        width: 100vw;
+    }
 
+    .content-section {
+        transition: .8s;
+    }
+
+    .title-section {
+        padding: 5em 10em;
+        color: var(--white);
+
+        & h2 {
+            font-size: 40px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(min-width: 1025px) {
     .animation-to-left {
         transform: translateX(-100vw);
         transition: .8s;
@@ -46,20 +69,16 @@ body {
         transition: .5s;
         transform-origin: left top;
     }
+}
 
-    .content-section {
-        transition: .8s;
-    }
-
+@media(max-width: 1024px) {
     .title-section {
-        padding: 5em 10em;
-        color: var(--white);
-        & h2 {
-            font-size: 40px;
-        }
-
-        & p {
-            font-size: 16px;
-        }
+        padding: 2em 1em !important;
+        text-align: center;
     }
+
+    section {
+        min-height: auto !important;
+    }
+
 }

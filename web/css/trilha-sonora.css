@@ -16,3 +16,11 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+
+    .playslist-apple-music {
+
+        padding: 0 1em !important;
+    }
+}
