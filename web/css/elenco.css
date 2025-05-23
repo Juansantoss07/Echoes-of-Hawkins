@@ -25,7 +25,7 @@
             padding: 1.5em;
             cursor: pointer;
             z-index: 10;
-            border-radius: 50px;
+            border-radius: 0;
             font-weight: bold;
             display: flex;
             align-items: center;
@@ -49,6 +49,19 @@
             transition: .7s;
             user-select: none;
             cursor: grab;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            & .dragging {
+                cursor: grabbing;
+                cursor: -webkit-grabbing;
+                user-select: none;
+            }
 
             & li {
                 list-style: none;
@@ -92,5 +105,3 @@
         }
     }
 }
-
-

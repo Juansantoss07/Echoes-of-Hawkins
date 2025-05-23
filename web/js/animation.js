@@ -9,8 +9,6 @@ window.addEventListener('scroll', () => {
     // animação da seção de elenco
     if (window.scrollY > limiteScrollElenco) {
         contentSectionElenco.classList.remove('animation-to-left');
-    } else {
-        contentSectionElenco.classList.add('animation-to-left');
     }
 
     // detectar se o elemento temporadas-details está visível no viewport
@@ -22,8 +20,6 @@ window.addEventListener('scroll', () => {
 
     if (isTemporadasVisible) {
         temporadasDetails.classList.remove('animation-to-scale-to-bottom');
-    } else {
-        temporadasDetails.classList.add('animation-to-scale-to-bottom');
     }
 
     // detectar se o elemento playlist-apple-music está visível no viewport
@@ -51,8 +47,6 @@ window.addEventListener('scroll', () => {
 
             if (isCuriosidadeVisible) {
                 curiosidadesSection.classList.remove('animation-to-left');
-            } else {
-                curiosidadesSection.classList.add('animation-to-left');
             }
         }
 });
